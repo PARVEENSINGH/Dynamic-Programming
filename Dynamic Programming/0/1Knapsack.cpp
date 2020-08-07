@@ -14,7 +14,7 @@ typedef long long ll;
            if(i==0 || j==0)
            res[i][j]=0;
 
-            else if(w[i-1]<=j)
+            else if(w[i-1]<=j) 
            
                res[i][j]=max(val[i-1]+res[i-1][j-w[i-1]],res[i-1][j]);
             else
